@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { addTodo, deleteTodo, removeTodo } from "../actions/index";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
-import About  from "./About";
+
 
 
 const Header = () => {
@@ -16,9 +16,7 @@ const Header = () => {
           <li>
             <a href="#">Home</a>
           </li>
-          <li>
-            <a href="src\components\About.jsx">About</a>
-          </li>
+
         </ul>
       </nav>
     </header>
