@@ -196,29 +196,7 @@ figcaption {
 .btn-effect04:hover:before {
   transform: translateX(0);
 }
-/*About*/
-.about-section {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  margin: 40px 0;
-  text-align: center;
-}
 
-.about-section h2 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-.about-section p {
-  font-size: 16px;
-  color: #666666;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
 /* Footer */
 footer {
   background-color: #4CAF50;
