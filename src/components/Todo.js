@@ -4,13 +4,43 @@ import { useSelector } from "react-redux";
 import { addTodo, deleteTodo, removeTodo } from "../actions/index";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
+import About  from "./About";
 
+
+const Header = () => {
+  return (
+    <header>
+      <div className="logo">Todo App</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+const Footer = () => {
+  return (
+    <footer>
+      <p>&copy; 2024 Todo App. All rights reserved.</p>
+    </footer>
+  );
+};
 const Todo = () => {
   const [inputData, setInputData] = useState("");
   const list = useSelector((state) => state.todoReducers.list);
   const dispatch = useDispatch();
   return (
     <>
+      <Header />
+
       <div className="main-div">
         <div className="child-div">
           <figure>
@@ -59,6 +89,10 @@ const Todo = () => {
           </div>
         </div>
       </div>
+      <div id="about">
+        <About/>
+      </div>
+      <Footer />
     </>
   );
 };

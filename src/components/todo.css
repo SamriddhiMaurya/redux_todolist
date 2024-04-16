@@ -1,76 +1,4 @@
-/* .main-div {
-  width: 100%;
-  height: 100vh;
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.child-div {
-  background: #fff;
-  width: 360px;
-  height: 500px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.child-div figure {
-  text-align: center;
-}
-
-.child-div figure figcaption {
-  font-size: 24px;
-  color: #343a40;
-}
-
-.addItems input {
-  width: 100%;
-  padding: 10px;
-   flex: 1;
-  margin-top: 20px;
-  border-radius: 5px;
-  border: 1px solid #ced4da;
-}
-
-
-.addItems .add-btn {
-  cursor: pointer;
-  font-size: 24px;
-  color: #007bff;
- 
-  margin-left: 343px; 
-
-}
-
-.showItems {
-  margin-top: 30px;
-}
-
-.eachItem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #dee2e6;
-  padding: 10px 0;
-}
-
-.todo-btn .add-btn {
-  cursor: pointer;
-  font-size: 20px;
-  color: #dc3545;
-}
-
-.todo-btn .add-btn:hover {
-  color: #c82333;
-} */
-
-
-/* todo.css */
-
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +10,43 @@ body {
   background-color: #f0f0f0;
 }
 
+
+/*Header Section*/
+header {
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f0f0f0;
+}
 /* Main Container */
 .main-div {
   width: 100%;
@@ -148,7 +113,7 @@ figcaption {
   background-color: #3e8e41;
 }
 
-/* Show Items Section */
+
 .showItems {
   max-height: 300px;
   overflow-y: auto;
@@ -230,4 +195,331 @@ figcaption {
 
 .btn-effect04:hover:before {
   transform: translateX(0);
+}
+/*About*/
+.about-section {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+/* Footer */
+footer {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  nav ul li {
+    margin-left: 15px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .child-div {
+    width: 90%;
+    padding: 30px;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
+  .addItems input {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .addItems .add-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .eachItem h3 {
+    font-size: 16px;
+  }
+
+  .todo-btn .add-btn {
+    font-size: 16px;
+  }
+
+  .btn-effect04 {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+   .about-section {
+    padding: 20px 15px;
+    margin: 20px 0;
+  }
+
+  .about-section h2 {
+    font-size: 18px;
+  }
+
+  .about-section p {
+    font-size: 12px;
+  }
+    footer {
+    font-size: 12px;
+  }
+}
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f0f0f0;
+}
+
+/* Main Container */
+.main-div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.child-div {
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+}
+
+
+figure {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+figcaption {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Add Items Section */
+.addItems {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.addItems input {
+  flex: 1;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background-color: #f0f0f0;
+  border-radius: 25px 0 0 25px;
+}
+
+.addItems .add-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addItems .add-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Show Items Section */
+.showItems {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+}
+
+.eachItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.eachItem h3 {
+  font-size: 18px;
+  color: #333333;
+}
+
+.todo-btn .add-btn {
+  color: #ff0000;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.todo-btn .add-btn:hover {
+  color: #b30000;
+}
+
+
+.showItem {
+  text-align: center;
+}
+
+.btn-effect04 {
+  display: inline-block;
+  border: none;
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-effect04 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-effect04:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3e8e41;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.btn-effect04:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-effect04:hover:before {
+  transform: translateX(0);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .child-div {
+    padding: 30px 20px;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
+  .addItems input {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .addItems .add-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .eachItem h3 {
+    font-size: 16px;
+  }
+
+  .todo-btn .add-btn {
+    font-size: 16px;
+  }
+
+  .btn-effect04 {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .child-div {
+    padding: 20px 15px;
+  }
+
+  figcaption {
+    font-size: 18px;
+  }
+
+  .addItems input {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  .addItems .add-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .eachItem h3 {
+    font-size: 14px;
+  }
+
+  .todo-btn .add-btn {
+    font-size: 14px;
+  }
+
+  .btn-effect04 {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 }
