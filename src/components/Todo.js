@@ -17,9 +17,7 @@ const Header = () => {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#about">
-              About
-            </a>
+            <a href="src\components\About.jsx">About</a>
           </li>
         </ul>
       </nav>
@@ -89,9 +87,7 @@ const Todo = () => {
           </div>
         </div>
       </div>
-      <div id="about">
-        <About/>
-      </div>
+      
       <Footer />
     </>
   );
